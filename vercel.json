@@ -1,10 +1,3 @@
-# Vercel Deployment Configuration
-
-This file contains the necessary configuration for deploying the Postrizerz e-commerce store on Vercel.
-
-## Project Configuration
-
-```json
 {
   "version": 2,
   "buildCommand": "next build",
@@ -13,25 +6,3 @@ This file contains the necessary configuration for deploying the Postrizerz e-co
   "framework": "nextjs",
   "outputDirectory": ".next"
 }
-```
-
-## Environment Variables
-
-The following environment variables should be configured in your Vercel project:
-
-```
-NEXT_PUBLIC_SITE_URL=https://your-domain.vercel.app
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-```
-
-## Build Settings
-
-- Node.js Version: 18.x
-- Install Command: `npm install`
-- Build Command: `next build`
-- Output Directory: `.next`
-
-## Serverless Functions
-
-The API routes in this project will be automatically deployed as serverless functions by Vercel.
